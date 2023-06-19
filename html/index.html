@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<!-- Déclaration du type de document -->
+
+<html lang="fr">
+
+</html>
+<!-- Spécifie la langue de la page  -->
+
+<head>
+    <!-- La balise head n'est pas affiché et contient les métadonnées -->
+
+    <meta charset="UTF-8">
+    <!-- Spécifie l'encodage des caractères utilisé dans la page.  -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Spécifie la version de rendu du navigateur que le site web doit utiliser, ajoute des compatibilités -->
+
+    <title>Bernar florent - Etudiant à Metz Numeric School</title>
+    <!-- Titre de la page trouvé par les moteurs de recherche.-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../image/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="../css/global.CSS">
+
+    <meta name="description" content="Portfolio de Bernar Florent - Stagiaire Développeur Web ">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Permet d'afficher un icone pour le site -->
+
+    <!-- Permet de lier une page de style CSS. -->
+
+    <script src="../js/global.js" defer></script>
+    <!-- Permet de lier une page JS , defer permet d'attendre que la page soit chargé pour faire du JS et éviter les bugs-->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Contenu du haut de page -->
+        <div class="container d-flex">
+            <div class="logo">Bernar Florent
+            </div>
+            <nav class="navbar">
+                <!-- Concerne la barre de navigation du site ( Accueil/Page/Etc...) -->
+                <ul class="menu list-unstyled">
+                    <!-- ul/li pour créer des listes -->
+                    <li> <a href="#hero">Acceuil</a> </li>
+                    <li> <a href="#about">A propos</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#skills">Compétences</a> </li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="blog.html">Blog</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                </ul>
+            </nav>
+
+            <div class="right">
+                <ul class="socials list-unstyled">
+                    <li><a href="https://fr-fr.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon faceboook" aria-hidden="true" height="3em" viewBox="0 0 320 512">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </svg></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon instagram" aria-hidden="true" height="3em" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon twitter" aria-hidden="true" height="3em" viewBox="0 0 512 512">
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg></a></li>
+                    <li><a href="https://www.linkedin.com/feed/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon linkedin" aria-hidden="true" height="3em" viewBox="0 0 448 512">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg></a></li>
+                </ul>
+                <button class="burger" aria-label="button"><span class="bar"></span></button>
+                <!-- Le "burger" concerne le bouton que l'on va utiliser pour naviguer dans des pages spécifiques. -->
+            </div>
+        </div>
+    </header>
+    <section id="hero" class="hero">
+        <!-- Section concerne des sections de pages que l'on souhaite attribuer à certains éléments  -->
+        <div class="container">
+            <!-- GRID : Ce sont des grilles, il faut l'imaginer comme des contenant qui contiennent d'autre contenant. -->
+            <div class="grid">
+                <div class="hero_item left">Développeur Web stagiaire</span>
+                    <h1 class="title">Hello, je suis Bernar Florent de Metz</h1>
+                    <p class="p-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempora eaque
+                        aspernatur voluptas sunt quo mollitia ut suscipit, ad ullam ipsam hic, earum, vel deleniti at ex
+                        maxime. Adipisci, dicta.</p>
+                </div>
+                <div class="hero_item right">
+                    <div class="hero_avatar"><img src="../image/hero-logo.png"
+                            alt="Avatar de Bernar Florent - Stagiaire à Metz Numeric School"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="grid">
+                <div class="grid_item"><img width="560" height="453" src="../image/Bernarflorent.png"
+                        alt="Bernar Florent - Stagaire à Metz Numéric School">
+                </div>
+                <div class="grid_item">
+                    <h2 class="section_title">A propos</h2>
+                    <h3> Qui suis-je?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat aliquam perspiciatis
+                        asperiores, repudiandae dolor sapiente nulla eos amet magni sed sint temporibus <strong>Mot ou
+                            portion de phrases importante</strong>facilis exercitationem consequatur labore sunt
+                        aspernatur ipsam obcaecati.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid necessitatibus at quo dolores
+                        ratione libero! Magni, natus, et nisi blanditiis laboriosam aliquam amet pariatur ab perferendis
+                        beatae repudiandae, facere quis.</p>
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, nemo. Doloremque aperiam
+                            aliquid provident, architecto autem nobis quasi soluta porro perspiciatis velit impedit,
+                            tempore commodi corrupti maxime facere. Consectetur, ullam?</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ab saepe necessitatibus
+                            dolorum expedita dolorem suscipit quo porro asperiores adipisci hic quisquam vel illum
+                            incidunt, molestias odio veniam deserunt? Excepturi!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ratione odit hic, veniam quasi
+                            aspernatur accusamus maiores incidunt? Repudiandae delectus saepe quis minima libero nihil
+                            dicta autem a voluptatibus. Dolores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ducimus velit laboriosam
+                            dolore accusamus doloremque hic odit quidem facilis quod! Veniam beatae recusandae
+                            voluptatem ad omnis quod consequuntur labore ullam?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Mes services</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eos dolore obcaecati perspiciatis. Eos
+                    neque
+                    similique placeat doloremque cupiditate, ut vero autem officia repellat explicabo, doloribus vel?
+                    Culpa,
+                    fuga
+                    quod!</p>
+            </div>
+            <div class="grid">
+                <div class="grid_item">
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H109c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H226.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H272v16c0 44.2-35.8 80-80 80z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>GESTION DE PROJETS WEB</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M441 58.9L453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2L344 121.9 390.1 168 255.8 302.2c-2.9 2.9-6.5 5-10.4 6.1l-58.5 16.7 16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25L175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25C446.8-3.1 401.2-3.1 373.1 25zM88 64C39.4 64 0 103.4 0 152V424c0 48.6 39.4 88 88 88H360c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24V424c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40H200c13.3 0 24-10.7 24-24s-10.7-24-24-24H88z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>INTÉGRATION WEB</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>DÉVELOPPEMENTS SPÉCIFIQUES</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>RÉFÉRENCEMENT NATUREL</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>CONCEPTION GRAPHIQUE & WEBDESIGN</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M142.9 142.9c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5c0 0 0 0 0 0H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM16 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L185 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H48.4h-.7H40c-13.3 0-24 10.7-24 24z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>DYNAMISME DES PAGES</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>INTERFACE D'ADMINISTRATION</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                                <path
+                                    d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                            </svg>
+                        </div>
+                        <div class="service_content">
+                            <h3>RESPONSIVE DESIGN</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae vero sed similique
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title>">Mes compétences</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quam officia voluptate, placeat
+                    cumque dolorum nesciunt illo perspiciatis laboriosam labore aspernatur possimus accusantium ipsam,
+                    eligendi ipsum nulla, deserunt facere consequuntur?</p>
+            </div>
+            <div class="grid">
+                <div class="grid_item">
+                    <h3>Domaines de compétences</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                        <li>
+                            <h4>Compétences</h4>
+                            <p>Description de la compétence</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid_item">
+                    <h3>Compétences en développement</h3>
+                    <div class="progressbar">
+                        <div class="bar" data-width="80">HTML</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="40">CSS</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="20">JS</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="25">PHP</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="5">NODE</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="10">REACT</div>
+                    </div>
+                    <h3>Compétences en conception graphique</h3>
+                    <div class="progressbar">
+                        <div class="bar" data-width="30">PHOTOSHOP</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="20">ILLUSTRATOR</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="75">FIGMA</div>
+                    </div>
+                    <div class="progressbar">
+                        <div class="bar" data-width="100">AFTER EFFECT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Porfolio</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eos dolore obcaecati perspiciatis. Eos
+                    neque
+                    similique placeat doloremque cupiditate, ut vero autem officia repellat explicabo, doloribus vel?
+                    Culpa,
+                    fuga
+                    quod!</p>
+            </div>
+            <ul class="grid portfolio_filters list-unstyled">
+                <li class="grid_item">
+                    <a href="#" data-filter="all">Tous les projets</a>
+                </li>
+                <li class="grid_item">
+                    <a href="#" data-filter="web">Développement web</a>
+                </li>
+                <li class="grid_item">
+                    <a href="#" data-filter="design">Refonte Graphique</a>
+                </li>
+                <li class="grid_item">
+                    <a href="#" data-filter="app">Applications</a>
+                </li>
+            </ul>
+            <div class="grid">
+                <div class="grid_item">
+                    <div class="card" data-category="web">
+                        <img src="https://picsum.photos/600/400?random=1" alt="projet de la ville" class="card_image">
+                        <!-- https://picsum.photos/600/400?random=1 Ce lien permet de générer des images aléatoire pour la mise en forme du site-->
+                        <div class="card_inner">
+                            <h3 class="card_title">Titre du projet</h3>
+                            <p class="category">Développement Web</p>
+                        </div>
+                        <div class="card_overlay">
+                            <a href="#" class="card_link" data-id="modal-1">+</a>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal-1">
+                        <button class="modal_close">&times;</button>
+
+                        <div class="modal_content">
+
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="grid_item">
+                                        <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                        <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                    </div>
+                                    <div class="grid_item">
+                                        <h4 class="modal_title h2">Développement Web</h4>
+                                        <p>
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="far" data-icon="calendar"
+                                                class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                </path>
+                                            </svg>
+                                            <i>Année : 2023</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="tag" class="svg-inline--fa fa-tag fa-w-16"
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                </path>
+                                            </svg>
+                                            Développement Web
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Technologies</h5>
+
+                                        <ul>
+                                            <li>HTML, CSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="card" data-category="design">
+                        <img src="https://picsum.photos/600/400?random=2" alt="projet de la ville" class="card_image">
+                        <div class="card_inner">
+                            <h3 class="card_title">Titre du projet</h3>
+                            <p class="category">Refonte graphique</p>
+                        </div>
+                        <div class="card_overlay">
+                            <a href="#" class="card_link" data-id="modal-2">+</a>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal-2">
+                        <button class="modal_close">&times;</button>
+
+                        <div class="modal_content">
+
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="grid_item">
+                                        <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                        <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                    </div>
+                                    <div class="grid_item">
+                                        <h4 class="modal_title h2">Refonte graphique</h4>
+                                        <p>
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="far" data-icon="calendar"
+                                                class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                </path>
+                                            </svg>
+                                            <i>Année : 2023</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="tag" class="svg-inline--fa fa-tag fa-w-16"
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                </path>
+                                            </svg>
+                                            Refonte graphique
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Technologies</h5>
+
+                                        <ul>
+                                            <li>HTML, CSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="card" data-category="app">
+                        <img src="https://picsum.photos/600/400?random=3" alt="projet de la ville" class="card_image">
+                        <div class="card_inner">
+                            <h3 class="card_title">Titre du projet</h3>
+                            <p class="category">Applications</p>
+                        </div>
+                        <div class="card_overlay">
+                            <a href="#" class="card_link" data-id="modal-3">+</a>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal-3">
+                        <button class="modal_close">&times;</button>
+
+                        <div class="modal_content">
+
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="grid_item">
+                                        <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                        <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                    </div>
+                                    <div class="grid_item">
+                                        <h4 class="modal_title h2">Applications</h4>
+                                        <p>
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="far" data-icon="calendar"
+                                                class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                </path>
+                                            </svg>
+                                            <i>Année : 2023</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="tag" class="svg-inline--fa fa-tag fa-w-16"
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                </path>
+                                            </svg>
+                                            Applications
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Technologies</h5>
+
+                                        <ul>
+                                            <li>HTML, CSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="card" data-category="web">
+                        <img src="https://picsum.photos/600/400?random=4" alt="projet de la ville" class="card_image">
+                        <div class="card_inner">
+                            <h3 class="card_title">Titre du projet</h3>
+                            <p class="category">Développement Web</p>
+                        </div>
+                        <div class="card_overlay">
+                            <a href="#" class="card_link" data-id="modal-4">+</a>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal-4">
+                        <button class="modal_close">&times;</button>
+
+                        <div class="modal_content">
+
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="grid_item">
+                                        <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                        <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                    </div>
+                                    <div class="grid_item">
+                                        <h4 class="modal_title h2">Développement Web</h4>
+                                        <p>
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="far" data-icon="calendar"
+                                                class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                </path>
+                                            </svg>
+                                            <i>Année : 2023</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="tag" class="svg-inline--fa fa-tag fa-w-16"
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                </path>
+                                            </svg>
+                                            Développement Web
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Technologies</h5>
+
+                                        <ul>
+                                            <li>HTML, CSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="card" data-category="design">
+                        <img src="https://picsum.photos/600/400?random=5" alt="projet de la ville" class="card_image">
+                        <div class="card_inner">
+                            <h3 class="card_title">Titre du projet</h3>
+                            <p class="category">Refonte graphique</p>
+                        </div>
+                        <div class="card_overlay">
+                            <a href="#" class="card_link" data-id="modal-5">+</a>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal-5">
+                        <button class="modal_close">&times;</button>
+
+                        <div class="modal_content">
+
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="grid_item">
+                                        <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                        <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                    </div>
+                                    <div class="grid_item">
+                                        <h4 class="modal_title h2">Refonte graphique</h4>
+                                        <p>
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="far" data-icon="calendar"
+                                                class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                </path>
+                                            </svg>
+                                            <i>Année : 2023</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="tag" class="svg-inline--fa fa-tag fa-w-16"
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                </path>
+                                            </svg>
+                                            Refonte graphique
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Technologies</h5>
+
+                                        <ul>
+                                            <li>HTML, CSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <div class="card" data-category="app">
+                        <img src="https://picsum.photos/600/400?random=6" alt="projet de la ville" class="card_image">
+                        <div class="card_inner">
+                            <h3 class="card_title">Titre du projet</h3>
+                            <p class="category">Applications</p>
+                        </div>
+                        <div class="card_overlay">
+                            <a href="#" class="card_link" data-id="modal-6">+</a>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal-6">
+                        <button class="modal_close">&times;</button>
+
+                        <div class="modal_content">
+
+                            <div class="container">
+                                <div class="grid">
+                                    <div class="grid_item">
+                                        <img src="https://picsum.photos/600/400?random=2" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                        <img src="https://picsum.photos/600/400?random=22" loading="lazy" width="560"
+                                            height="373" class="card_image" alt="Projet site de la ville de lyon" />
+                                    </div>
+                                    <div class="grid_item">
+                                        <h4 class="modal_title h2">Applications</h4>
+                                        <p>
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="far" data-icon="calendar"
+                                                class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                </path>
+                                            </svg>
+                                            <i>Année : 2023</i>
+                                        </p>
+                                        <p class="category">
+                                            <svg width="15" height="15" aria-hidden="true" focusable="false"
+                                                data-prefix="fas" data-icon="tag" class="svg-inline--fa fa-tag fa-w-16"
+                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                </path>
+                                            </svg>
+                                            Refonte graphique
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Informations</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Quaerat accusantium laborum aliquam enim. Vero
+                                            voluptate, animi, sint vel mollitia ut odio, eius quis
+                                            expedita quo at! Dignissimos ipsum odit dolores!
+                                        </p>
+
+                                        <h5 class="h3">Technologies</h5>
+
+                                        <ul>
+                                            <li>HTML, CSS</li>
+                                            <li>Javascript</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section_header">
+                <h2 class="section_title">Contact</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eos dolore obcaecati perspiciatis. Eos
+                    neque
+                    similique placeat doloremque cupiditate, ut vero autem officia repellat explicabo, doloribus vel?
+                    Culpa,
+                    fuga
+                    quod!</p>
+            </div>
+
+            <form action="contact.php" class="form">
+                <label for="firstname">
+                    <input type="text" name="firstname" id="firstname" placeholder="Nom">
+                </label>
+                <label for="lastname">
+                    <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+                </label>
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <input type="submit" class="btn" value="Envoyer">
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <!-- Contenu du pied de page -->
+        <div class="container">
+            <div class="grid">
+                <div class="grid_item">
+                    <p>Florent Bernar</p>
+                </div>
+                <div class="grid_item">
+                    <ul class="socials list-unstyled">
+                        <li><a href="https://www.google.fr/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon faceboook" aria-hidden="true" height="3em" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg></a></li>
+                        <li><a href="https://www.google.fr/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon instagram" aria-hidden="true" height="3em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg></a></li>
+                        <li><a href="https://www.google.fr/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon twitter" aria-hidden="true" height="3em" viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg></a></li>
+                        <li><a href="https://www.google.fr/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon linkedin" aria-hidden="true" height="3em" viewBox="0 0 448 512">
+                                    <path
+                                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="grid_item">
+                    <p class="copyright">Copyright © 2023 Nomdusite. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
